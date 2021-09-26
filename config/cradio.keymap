@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-/* Adjusted Cradio pin arrangement */
-/* The position of Q and B keys have been swapped */
 &kscan0 {
 	input-gpios
 	= <&pro_micro_d  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -37,17 +35,15 @@
 / { 
 
     keymap {
-	compatible = "zmk,keymap";
+		compatible = "zmk,keymap";
 			
-	default_layer {
-	bindings = <
-	&kp Q &kp W &kp F &kp P &kp B 				   &kp J &kp L  &kp Y &kp I &kp P 
-	&kp A &kp R &kp S &kp T &kp G 			       &kp M &kp N  &kp E &kp I &kp O
-	&kp Z &kp X &kp C &kp D &kp V				   &kp K &kp H  &kp CMMA &kp DOT &kp FSLH
-					  &kp SPC 1 &kp TAB  		&kp BKSP &kp RET 
-	>;
+		default_layer {
+			bindings = <
+			&kp Q &kp W &kp F &kp P &kp B 				   &kp J &kp L  &kp Y &kp I &kp P 
+			&kp A &kp R &kp S &kp T &kp G 			       &kp M &kp N  &kp E &kp I &kp O
+			&kp Z &kp X &kp C &kp D &kp V				   &kp K &kp H  &kp CMMA &kp DOT &kp FSLH
+							  &kp SPC 1 &kp TAB  		&kp BKSP &kp RET 
+			>;
+		};
 	};
-  
-};
-
 };
